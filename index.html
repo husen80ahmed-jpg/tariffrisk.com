@@ -1,577 +1,405 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="TariffRisk.com — premium B2B domain for tariff intelligence, trade compliance, and supply-chain risk. Acquire a category-defining .COM asset." />
-  <title>TariffRisk.com — Premium B2B Domain for Acquisition</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TariffRisk.com | A Clear Domain for Trade Compliance & Tariff Intelligence</title>
+  <meta
+    name="description"
+    content="TariffRisk.com is a clear, memorable domain for tariff intelligence, trade compliance, landed-cost analysis, and supply-chain risk visibility."
+  />
+
+  <meta property="og:title" content="TariffRisk.com | Domain for Trade Compliance & Tariff Intelligence" />
+  <meta
+    property="og:description"
+    content="A market-facing domain for tariff intelligence, landed-cost tools, customs advisory, and trade-risk platforms."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://i.ibb.co/B5F0shg5/tariffrisk-com.jpg" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
 
   <style>
-    :root{
-      --bg0:#05060a;
-      --bg1:#0a1020;
-      --panel: rgba(255,255,255,.06);
-      --panel2: rgba(255,255,255,.10);
-      --stroke: rgba(255,255,255,.12);
-      --stroke2: rgba(255,255,255,.18);
-
-      --text: rgba(255,255,255,.92);
-      --muted: rgba(255,255,255,.72);
-      --muted2: rgba(255,255,255,.58);
-
-      --cyan:#22d3ee;
-      --violet:#a78bfa;
-      --amber:#fbbf24;
-      --mint:#34d399;
-
-      --shadow: 0 24px 70px rgba(0,0,0,.55);
-      --r:18px;
-      --r2:28px;
-      --max: 1180px;
-
-      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono","Courier New", monospace;
-      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-    }
-
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family: var(--sans);
-      color: var(--text);
-      background:
-        radial-gradient(900px 650px at 15% 10%, rgba(34,211,238,.16), transparent 55%),
-        radial-gradient(900px 650px at 85% 18%, rgba(167,139,250,.14), transparent 55%),
-        radial-gradient(900px 650px at 50% 96%, rgba(251,191,36,.12), transparent 60%),
-        linear-gradient(180deg, var(--bg0) 0%, var(--bg1) 55%, var(--bg0) 100%);
-      overflow-x:hidden;
-    }
-
-    a{color:inherit; text-decoration:none}
-    .wrap{max-width:var(--max); margin:0 auto; padding:26px 18px 72px}
-
-    /* Top bar */
-    .topbar{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:14px; padding:10px 0 22px;
-    }
-    .brand{display:flex; align-items:center; gap:12px}
-    .logo{
-      width:44px; height:44px; border-radius:14px;
-      background: linear-gradient(135deg, rgba(34,211,238,.95), rgba(167,139,250,.90));
-      box-shadow: 0 18px 45px rgba(34,211,238,.10);
-      position:relative; overflow:hidden;
-    }
-    .logo:before{
-      content:"";
-      position:absolute; inset:-60%;
-      background: radial-gradient(circle at 30% 35%, rgba(255,255,255,.55), transparent 46%);
-      transform: rotate(18deg);
-    }
-    .brand h1{margin:0; font-size:13px; letter-spacing:.6px; color:var(--muted); font-weight:850}
-    .tagline{margin:2px 0 0; font-size:12px; color:var(--muted2)}
-    .status{
-      display:flex; align-items:center; gap:10px;
-      padding:10px 12px;
-      border:1px solid var(--stroke);
-      border-radius:999px;
-      background: rgba(255,255,255,.04);
-      color:var(--muted);
-      backdrop-filter: blur(10px);
-    }
-    .dot{
-      width:9px; height:9px; border-radius:99px;
-      background: var(--mint);
-      box-shadow: 0 0 0 7px rgba(52,211,153,.12);
-    }
-
-    /* Hero layout */
-    .hero{
-      display:grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap:18px;
-      align-items:stretch;
-    }
-
-    .card{
-      border:1px solid var(--stroke);
-      border-radius: var(--r2);
-      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
-      box-shadow: var(--shadow);
-      position:relative;
-      overflow:hidden;
-    }
-    .card .inner{position:relative; padding:26px}
-
-    /* Decorative “risk matrix” */
-    .matrix{position:absolute; inset:-1px; pointer-events:none;}
-    .matrix:before{
-      content:"";
-      position:absolute; inset:0;
-      background:
-        radial-gradient(700px 280px at 18% 10%, rgba(34,211,238,.14), transparent 60%),
-        radial-gradient(700px 280px at 82% 10%, rgba(167,139,250,.12), transparent 60%),
-        radial-gradient(900px 520px at 50% 115%, rgba(251,191,36,.10), transparent 65%);
-    }
-    .matrix:after{
-      content:"";
-      position:absolute; inset:0;
-      background:
-        linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px),
-        linear-gradient(180deg, rgba(255,255,255,.05) 1px, transparent 1px);
-      background-size: 44px 44px;
-      opacity:.10;
-      mask-image: radial-gradient(circle at 28% 20%, black 30%, transparent 62%);
-    }
-
-    .domainPill{
-      display:inline-flex; align-items:center; gap:10px;
-      padding:10px 12px;
-      border-radius: 999px;
-      border:1px solid rgba(34,211,238,.22);
-      background: rgba(0,0,0,.22);
-      backdrop-filter: blur(8px);
-      font-family: var(--mono);
-      font-size: 13px;
-      letter-spacing:.7px;
-      color: rgba(255,255,255,.90);
-    }
-    .spark{
-      width:10px; height:10px; border-radius:99px;
-      background: linear-gradient(135deg, var(--cyan), var(--amber));
-      box-shadow: 0 0 0 7px rgba(34,211,238,.10);
-    }
-
-    .headline{
-      margin:14px 0 10px;
-      font-size: 46px;
-      line-height: 1.04;
-      letter-spacing: -0.9px;
-      font-weight: 900;
-    }
-    .sub{
-      margin:0;
-      color: var(--muted);
-      font-size: 16px;
-      line-height: 1.7;
-      max-width: 62ch;
-    }
-
-    .trustRow{
-      margin-top:16px;
-      display:flex; gap:10px; flex-wrap:wrap;
-    }
-    .chip{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:10px 11px;
-      border-radius: 999px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      color: var(--muted);
-      font-size:12.6px;
-    }
-    .chip i{
-      width:8px; height:8px; border-radius:99px;
-      background: var(--amber);
-      box-shadow: 0 0 0 6px rgba(251,191,36,.10);
-      display:inline-block;
-    }
-
-    .grid3{
-      margin-top:16px;
-      display:grid;
-      grid-template-columns: repeat(3, minmax(0,1fr));
-      gap:12px;
-    }
-    .feature{
-      padding:14px;
-      border-radius: var(--r);
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.03);
-    }
-    .feature b{display:block; font-size:13px; margin-bottom:6px}
-    .feature p{margin:0; font-size:12.8px; color:var(--muted); line-height:1.55}
-
-    /* CEO section */
-    .section{
-      margin-top:16px;
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:12px;
-    }
-    .box{
-      padding:14px;
-      border-radius: var(--r);
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.03);
-    }
-    .box h3{margin:0 0 8px; font-size:14px; letter-spacing:.2px}
-    .box ul{margin:0; padding-left:18px; color:var(--muted); font-size:12.9px; line-height:1.65}
-    .box li{margin:6px 0}
-
-    /* CTA card */
-    .ctaTitle{margin:0 0 8px; font-size:16px; font-weight:900}
-    .ctaDesc{margin:0 0 14px; color:var(--muted); font-size:13.7px; line-height:1.6}
-
-    .btnRow{display:flex; flex-direction:column; gap:10px}
-    .btn{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:10px;
-      padding:12px 14px;
-      border-radius: 16px;
-      border:1px solid rgba(255,255,255,.16);
-      background: rgba(255,255,255,.04);
-      transition: transform .12s ease, background .12s ease, border-color .12s ease;
-      user-select:none;
-    }
-    .btn:hover{transform: translateY(-1px); border-color: rgba(255,255,255,.26); background: rgba(255,255,255,.06)}
-    .btn strong{font-size:13.7px}
-    .btn span{font-size:12.6px; color:var(--muted)}
-    .arrow{font-family:var(--mono); color: rgba(255,255,255,.78)}
-
-    .primary{
-      border:1px solid rgba(34,211,238,.30);
-      background: linear-gradient(135deg, rgba(34,211,238,.18), rgba(167,139,250,.14));
-    }
-    .primary:hover{
-      border-color: rgba(34,211,238,.46);
-      background: linear-gradient(135deg, rgba(34,211,238,.22), rgba(167,139,250,.18));
-    }
-
-    .meta{
-      margin-top:14px;
-      padding-top:14px;
-      border-top:1px solid rgba(255,255,255,.10);
-      display:grid;
-      gap:10px;
-    }
-    .metaLine{
-      display:flex; justify-content:space-between; gap:12px;
-      font-size:12.7px; color:var(--muted);
-      padding:10px 12px;
-      border:1px dashed rgba(255,255,255,.16);
-      border-radius: 16px;
-      background: rgba(0,0,0,.18);
-    }
-    .metaLine code{
-      font-family:var(--mono);
-      color: rgba(255,255,255,.86);
-      background: transparent;
-    }
-
-    .note{
-      margin-top:14px;
-      padding:14px;
-      border-radius: var(--r);
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(0,0,0,.14);
-      color: var(--muted);
-      font-size:12.9px;
-      line-height:1.65;
-    }
-
-    .faq{
-      margin-top:16px;
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap:12px;
-    }
-    details{
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.03);
-      border-radius: var(--r);
-      padding:12px 14px;
-    }
-    summary{
-      cursor:pointer;
-      font-weight:800;
-      font-size:13px;
-      color: rgba(255,255,255,.88);
-      list-style:none;
-    }
-    summary::-webkit-details-marker{display:none}
-    details p{
-      margin:10px 0 0;
-      color: var(--muted);
-      font-size:12.8px;
-      line-height:1.6;
-    }
-
-    .footer{
-      margin-top:22px;
-      padding-top:14px;
-      border-top:1px solid rgba(255,255,255,.10);
-      color: var(--muted2);
-      font-size:12px;
-      display:flex;
-      justify-content:space-between;
-      gap:14px;
-      flex-wrap:wrap;
-    }
-    .footer a{color: rgba(255,255,255,.80); text-decoration:underline; text-underline-offset:3px}
-
-    /* Sticky CTA bar */
-    .sticky{
-      position: fixed;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 14px;
-      width: min(var(--max), calc(100% - 22px));
-      z-index: 20;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(8,10,16,.68);
-      backdrop-filter: blur(14px);
-      border-radius: 999px;
-      padding: 10px 12px;
-      display:flex;
-      align-items:center;
-      justify-content: space-between;
-      gap:10px;
-      box-shadow: 0 18px 60px rgba(0,0,0,.45);
-    }
-    .stickyLeft{
-      display:flex; align-items:center; gap:10px;
-      min-width: 0;
-    }
-    .miniDot{
-      width:9px; height:9px; border-radius:99px;
-      background: linear-gradient(135deg, var(--cyan), var(--amber));
-      box-shadow: 0 0 0 7px rgba(34,211,238,.10);
-      flex: 0 0 auto;
-    }
-    .stickyTitle{
-      font-size:12.8px;
-      font-weight:900;
-      white-space:nowrap;
-      overflow:hidden;
-      text-overflow:ellipsis;
-      max-width: 62vw;
-    }
-    .stickyBtns{
-      display:flex; gap:8px; flex: 0 0 auto;
-    }
-    .sbtn{
-      padding:10px 12px;
-      border-radius: 999px;
-      border:1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.06);
-      font-size:12.6px;
-      font-weight:850;
-    }
-    .sbtn.primary{
-      border-color: rgba(34,211,238,.30);
-      background: linear-gradient(135deg, rgba(34,211,238,.20), rgba(167,139,250,.12));
-    }
-    .sbtn:hover{background: rgba(255,255,255,.08)}
-    .sbtn.primary:hover{background: linear-gradient(135deg, rgba(34,211,238,.26), rgba(167,139,250,.16))}
-
-    /* Responsive */
-    @media (max-width: 980px){
-      .hero{grid-template-columns: 1fr;}
-      .headline{font-size: 38px}
-      .grid3{grid-template-columns: 1fr}
-      .section{grid-template-columns: 1fr}
-      .faq{grid-template-columns: 1fr}
-      .stickyTitle{max-width: 44vw;}
-    }
+    body { font-family: 'Inter', sans-serif; }
+    .bg-corporate { background-color: #0f172a; }
+    .text-accent { color: #f59e0b; }
+    .bg-accent { background-color: #f59e0b; }
+    .bg-accent:hover { background-color: #d97706; }
   </style>
 </head>
+<body class="bg-slate-50 text-slate-900 antialiased">
 
-<body>
-  <div class="wrap">
-    <div class="topbar">
-      <div class="brand">
-        <div class="logo" aria-hidden="true"></div>
+  <!-- Header -->
+  <header class="bg-white border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <img
+          src="https://i.ibb.co/BHhQ5LHz/SNAP-THE-NAME.png"
+          alt="Snap the Name Logo"
+          class="h-11 w-auto object-contain"
+        />
         <div>
-          <h1>SnapTheName.com — Premium Domain Assets</h1>
-          <div class="tagline">B2B-ready digital real estate for category leadership</div>
+          <div class="text-lg font-bold text-slate-900">Snap the Name</div>
+          <div class="text-xs text-slate-500">Digital Assets for Strategic Buyers</div>
         </div>
       </div>
 
-      <div class="status" title="Status">
-        <span class="dot" aria-hidden="true"></span>
-        <div style="display:flex; flex-direction:column; line-height:1.1">
-          <span style="font-weight:900; font-size:13px;">For Acquisition</span>
-          <span style="font-size:12px; color:var(--muted2)">Direct negotiation</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero">
-      <!-- Main -->
-      <div class="card">
-        <div class="matrix" aria-hidden="true"></div>
-        <div class="inner">
-          <div class="domainPill">
-            <span class="spark" aria-hidden="true"></span>
-            <span>TariffRisk.com</span>
-          </div>
-
-          <div class="headline">Own the category name for tariff & trade risk.</div>
-          <p class="sub">
-            <b>TariffRisk.com</b> is a premium, exact-match .COM designed for companies building
-            tariff intelligence, trade compliance, customs automation, and supply-chain risk solutions.
-            It’s not just a domain — it’s a <b>position</b>: clear, memorable, and trusted by enterprise buyers.
-          </p>
-
-          <div class="trustRow" aria-label="Trust signals">
-            <div class="chip"><i></i> Category-defining keyword</div>
-            <div class="chip"><i></i> Product-brand ready</div>
-            <div class="chip"><i></i> High-intent lead capture</div>
-            <div class="chip"><i></i> Secure transfer workflow</div>
-          </div>
-
-          <div class="grid3" role="list">
-            <div class="feature" role="listitem">
-              <b>Instant clarity</b>
-              <p>Two words. One meaning. Your market understands it in a second — no explanation needed.</p>
-            </div>
-            <div class="feature" role="listitem">
-              <b>Enterprise credibility</b>
-              <p>Short, clean .COM domains signal maturity and reduce friction in B2B decision cycles.</p>
-            </div>
-            <div class="feature" role="listitem">
-              <b>Marketing efficiency</b>
-              <p>Better recall, better CTR, stronger inbound. A domain that makes every campaign sharper.</p>
-            </div>
-          </div>
-
-          <div class="section">
-            <div class="box">
-              <h3>What the CEO gets (outcomes)</h3>
-              <ul>
-                <li><b>Lower acquisition cost</b> by improving trust + message clarity across ads and outreach.</li>
-                <li><b>Shorter sales cycles</b> because your category is obvious, credible, and “enterprise-ready”.</li>
-                <li><b>Strategic moat</b> — you own the name of the problem your buyers search for.</li>
-                <li><b>Board-level narrative</b>: governance, compliance, and risk positioning under one brand.</li>
-              </ul>
-            </div>
-
-            <div class="box">
-              <h3>Best-fit buyers (B2B)</h3>
-              <ul>
-                <li>Trade compliance & customs automation platforms</li>
-                <li>Supply-chain risk analytics & visibility vendors</li>
-                <li>Consulting firms (tariff mitigation / duty optimization)</li>
-                <li>Enterprise solutions teams (product line / campaign hub)</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="note">
-            <b style="color:rgba(255,255,255,.88)">Positioning idea:</b>
-            use TariffRisk.com as your product name (e.g., “Tariff Risk Intelligence”), your industry portal,
-            or a high-converting landing hub for enterprise inbound.
-          </div>
-        </div>
-      </div>
-
-      <!-- CTA -->
-      <div class="card" id="contact">
-        <div class="inner">
-          <h2 class="ctaTitle">Request price & acquisition terms</h2>
-          <p class="ctaDesc">
-            Serious B2B inquiries only. Share your company name and intended use case to receive a direct price
-            and a secure transfer workflow.
-          </p>
-
-          <div class="btnRow">
-            <a class="btn primary"
-               href="https://wa.me/201000001802?text=Hello%20Hussein%2C%20I%27m%20interested%20in%20TariffRisk.com.%20Please%20share%20pricing%20and%20acquisition%20terms.%0ACompany%3A%0ARole%3A%0AUse%20case%3A"
-               target="_blank" rel="noopener">
-              <div>
-                <strong>WhatsApp (Fast)</strong><br>
-                <span>+20 100 000 1802</span>
-              </div>
-              <div class="arrow">→</div>
-            </a>
-
-            <a class="btn"
-               href="mailto:hussein.lashin@snapthename.com?subject=TariffRisk.com%20-%20Acquisition%20Inquiry&body=Hello%20Hussein%2C%0A%0AI%27m%20interested%20in%20acquiring%20TariffRisk.com.%0APlease%20share%20the%20price%2C%20terms%2C%20and%20transfer%20process.%0A%0ACompany%3A%0ARole%3A%0AUse%20case%3A%0A%0AThanks."
-               >
-              <div>
-                <strong>Email</strong><br>
-                <span>hussein.lashin@snapthename.com</span>
-              </div>
-              <div class="arrow">→</div>
-            </a>
-
-            <a class="btn" href="tel:+201000001802">
-              <div>
-                <strong>Call</strong><br>
-                <span>+20 100 000 1802</span>
-              </div>
-              <div class="arrow">→</div>
-            </a>
-          </div>
-
-          <div class="meta" aria-label="Details">
-            <div class="metaLine">
-              <span>Asset type</span>
-              <code>Premium .COM</code>
-            </div>
-            <div class="metaLine">
-              <span>Best use</span>
-              <code>Product • Campaign • Portal</code>
-            </div>
-            <div class="metaLine">
-              <span>Seller</span>
-              <code>SnapTheName.com</code>
-            </div>
-          </div>
-
-          <div class="note">
-            <b style="color:rgba(255,255,255,.88)">What to send:</b>
-            Company + your role + use case + timeline. We reply with a direct offer and transfer steps.
-          </div>
-        </div>
+      <div class="hidden md:flex items-center gap-5 text-sm">
+        <a href="mailto:hussein.lashin@snapthename.com" class="text-slate-600 hover:text-slate-900 font-medium">
+          Contact
+        </a>
+        <a href="tel:+201000001802" class="text-slate-600 hover:text-slate-900 font-medium">
+          +20 100 000 1802
+        </a>
       </div>
     </div>
+  </header>
 
-    <div class="faq">
-      <details>
-        <summary>Why does a premium domain matter in B2B?</summary>
-        <p>In enterprise markets, trust and clarity reduce friction. A short, exact-match .COM improves recall, credibility, and response rates across outreach, ads, and partnerships.</p>
-      </details>
-      <details>
-        <summary>How is the transfer handled?</summary>
-        <p>Secure transfer via a standard registrar workflow or escrow, depending on the buyer’s preference and compliance requirements.</p>
-      </details>
-      <details>
-        <summary>Can we structure lease-to-own?</summary>
-        <p>Yes. If you prefer budgeting flexibility, lease-to-own can be discussed for qualified buyers.</p>
-      </details>
-      <details>
-        <summary>Is this an official website of any entity?</summary>
-        <p>No. This page is an independent listing for the domain asset offered for acquisition.</p>
-      </details>
-    </div>
-
-    <div class="footer">
-      <div>© <span id="y"></span> SnapTheName.com — B2B Domain Assets</div>
+  <!-- Hero -->
+  <section class="bg-corporate text-white">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 lg:px-16 py-16 md:py-20 grid lg:grid-cols-2 gap-12 items-center">
       <div>
-        <a href="#contact">Request terms</a>
-        &nbsp;•&nbsp;
-        <a href="https://wa.me/201000001802" target="_blank" rel="noopener">WhatsApp</a>
+        <div class="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-400/10 px-4 py-1.5 text-sm font-semibold text-amber-300 mb-6">
+          <i class="fa-solid fa-globe"></i>
+          Domain Available for Acquisition
+        </div>
+
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
+          <span class="text-accent">TariffRisk.com</span><br />
+          A Clear Domain for Trade Compliance, Tariff Intelligence, and Cross-Border Cost Visibility
+        </h1>
+
+        <p class="text-slate-300 text-lg leading-8 max-w-2xl mb-8">
+          Built for platforms, advisory firms, and trade teams operating in a market where tariff volatility,
+          landed-cost planning, customs exposure, and sourcing risk have become executive-level concerns.
+        </p>
+
+        <div class="flex flex-wrap gap-4 mb-8">
+          <a
+            href="https://wa.me/201000001802"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 rounded-lg bg-green-500 hover:bg-green-600 text-white px-6 py-3 font-semibold shadow-lg transition"
+          >
+            <i class="fab fa-whatsapp text-lg"></i>
+            WhatsApp
+          </a>
+
+          <a
+            href="mailto:hussein.lashin@snapthename.com?subject=TariffRisk.com%20Acquisition%20Inquiry"
+            class="inline-flex items-center gap-2 rounded-lg bg-white text-slate-900 hover:bg-slate-100 px-6 py-3 font-semibold shadow-lg transition"
+          >
+            <i class="fas fa-envelope"></i>
+            Email Inquiry
+          </a>
+
+          <a
+            href="tel:+201000001802"
+            class="inline-flex items-center gap-2 rounded-lg border border-slate-400 hover:border-white text-white px-6 py-3 font-semibold transition"
+          >
+            <i class="fas fa-phone-alt"></i>
+            Call
+          </a>
+        </div>
+
+        <div class="grid sm:grid-cols-3 gap-4 text-sm">
+          <div class="rounded-xl bg-white/5 border border-white/10 p-4">
+            <div class="text-white font-semibold mb-1">Topical Clarity</div>
+            <div class="text-slate-300">Directly aligned with tariff, customs, and trade-risk use cases</div>
+          </div>
+          <div class="rounded-xl bg-white/5 border border-white/10 p-4">
+            <div class="text-white font-semibold mb-1">B2B Ready</div>
+            <div class="text-slate-300">Suitable for software, advisory, intelligence, and market-facing portals</div>
+          </div>
+          <div class="rounded-xl bg-white/5 border border-white/10 p-4">
+            <div class="text-white font-semibold mb-1">Memorable</div>
+            <div class="text-slate-300">Simple wording that is easy to understand, present, and remember</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute inset-0 bg-amber-500/20 blur-3xl rounded-full"></div>
+        <img
+          src="https://i.ibb.co/B5F0shg5/tariffrisk-com.jpg"
+          alt="Tariff risk and global trade concept"
+          loading="lazy"
+          class="relative z-10 w-full h-auto rounded-2xl shadow-2xl border border-slate-700"
+        />
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Sticky CTA -->
-  <div class="sticky" role="region" aria-label="Quick contact">
-    <div class="stickyLeft">
-      <span class="miniDot" aria-hidden="true"></span>
-      <div class="stickyTitle">TariffRisk.com — Request price & terms</div>
-    </div>
-    <div class="stickyBtns">
-      <a class="sbtn primary" href="https://wa.me/201000001802?text=Hello%20Hussein%2C%20I%27m%20interested%20in%20TariffRisk.com.%20Please%20share%20pricing%20and%20acquisition%20terms." target="_blank" rel="noopener">WhatsApp</a>
-      <a class="sbtn" href="mailto:hussein.lashin@snapthename.com?subject=TariffRisk.com%20-%20Inquiry">Email</a>
-      <a class="sbtn" href="tel:+201000001802">Call</a>
-    </div>
-  </div>
+  <!-- Why Now -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
+      <div class="max-w-3xl mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Why This Category Matters Now</h2>
+        <p class="text-slate-600 text-lg leading-8">
+          This is not a speculative phrase. It maps to a real operating problem affecting pricing,
+          sourcing, compliance, and executive decision-making across global trade.
+        </p>
+      </div>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-7 shadow-sm">
+          <div class="text-amber-500 text-4xl mb-4"><i class="fa-solid fa-chart-column"></i></div>
+          <div class="text-3xl font-extrabold text-slate-900 mb-2">$194.8B</div>
+          <div class="font-semibold text-slate-800 mb-3">Additional U.S. customs revenue above the 2022–2024 average</div>
+          <p class="text-slate-600 text-sm leading-7 mb-4">
+            Tariff changes are not theoretical. They are materially affecting import economics and trade planning.
+          </p>
+          <a
+            href="https://budgetlab.yale.edu/research/tracking-economic-effects-tariffs"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-sm font-semibold text-blue-700 hover:underline"
+          >
+            Source: The Budget Lab at Yale
+          </a>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-7 shadow-sm">
+          <div class="text-amber-500 text-4xl mb-4"><i class="fa-solid fa-triangle-exclamation"></i></div>
+          <div class="text-3xl font-extrabold text-slate-900 mb-2">72%</div>
+          <div class="font-semibold text-slate-800 mb-3">of trade professionals cite U.S. tariff volatility as the most impactful regulatory change</div>
+          <p class="text-slate-600 text-sm leading-7 mb-4">
+            The issue has moved beyond back-office classification work into strategic planning and board-level visibility.
+          </p>
+          <a
+            href="https://www.thomsonreuters.com/en-us/posts/corporates/2026-global-trade-report/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-sm font-semibold text-blue-700 hover:underline"
+          >
+            Source: Thomson Reuters 2026 Global Trade Report
+          </a>
+        </div>
+
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-7 shadow-sm">
+          <div class="text-amber-500 text-4xl mb-4"><i class="fa-solid fa-calculator"></i></div>
+          <div class="text-xl font-extrabold text-slate-900 mb-2">Operational Use Case</div>
+          <div class="font-semibold text-slate-800 mb-3">Landed-cost tools and customs workflows are now standard commercial needs</div>
+          <p class="text-slate-600 text-sm leading-7 mb-4">
+            The category already exists in active software, trade, and logistics workflows — which strengthens the commercial logic behind the name.
+          </p>
+          <div class="flex flex-col gap-2">
+            <a
+              href="https://www.dhl.com/global-en/microsites/express/mygts.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm font-semibold text-blue-700 hover:underline"
+            >
+              Example: DHL MyGTS
+            </a>
+            <a
+              href="https://zonos.com/landed-cost"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm font-semibold text-blue-700 hover:underline"
+            >
+              Example: Zonos Landed Cost
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Use Cases -->
+  <section class="py-16 md:py-20 bg-slate-100">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
+      <div class="max-w-3xl mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Use Cases</h2>
+        <p class="text-slate-600 text-lg leading-8">
+          TariffRisk.com is best positioned as a commercially direct name for a focused B2B product, advisory service, or intelligence platform.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="rounded-xl bg-white border border-slate-200 p-5 font-medium text-slate-800">Tariff risk intelligence platform</div>
+        <div class="rounded-xl bg-white border border-slate-200 p-5 font-medium text-slate-800">Trade compliance advisory portal</div>
+        <div class="rounded-xl bg-white border border-slate-200 p-5 font-medium text-slate-800">Landed-cost analysis tool</div>
+        <div class="rounded-xl bg-white border border-slate-200 p-5 font-medium text-slate-800">Customs exposure dashboard</div>
+        <div class="rounded-xl bg-white border border-slate-200 p-5 font-medium text-slate-800">Supply chain risk monitoring hub</div>
+        <div class="rounded-xl bg-white border border-slate-200 p-5 font-medium text-slate-800">Import/export pricing resource center</div>
+        <div class="rounded-xl bg-white border border-slate-200 p-5 font-medium text-slate-800">Trade-policy update platform</div>
+        <div class="rounded-xl bg-white border border-slate-200 p-5 font-medium text-slate-800">B2B sourcing and mitigation resource site</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ideal Buyer Fit -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
+      <div class="grid lg:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-5">Ideal Buyer Fit</h2>
+          <p class="text-slate-600 text-lg leading-8 mb-8">
+            This name is strongest for buyers who need a serious, descriptive, market-facing domain
+            tied to tariff exposure, customs complexity, and cross-border trade economics.
+          </p>
+
+          <div class="space-y-4">
+            <div class="flex gap-3">
+              <i class="fa-solid fa-circle-check text-green-600 mt-1"></i>
+              <p class="text-slate-700"><strong>Trade compliance software</strong> and customs workflow platforms</p>
+            </div>
+            <div class="flex gap-3">
+              <i class="fa-solid fa-circle-check text-green-600 mt-1"></i>
+              <p class="text-slate-700"><strong>Landed-cost calculators</strong> and pricing visibility tools</p>
+            </div>
+            <div class="flex gap-3">
+              <i class="fa-solid fa-circle-check text-green-600 mt-1"></i>
+              <p class="text-slate-700"><strong>Customs and trade advisory firms</strong> serving importers and exporters</p>
+            </div>
+            <div class="flex gap-3">
+              <i class="fa-solid fa-circle-check text-green-600 mt-1"></i>
+              <p class="text-slate-700"><strong>Supply chain intelligence products</strong> focused on disruption and exposure</p>
+            </div>
+            <div class="flex gap-3">
+              <i class="fa-solid fa-circle-check text-green-600 mt-1"></i>
+              <p class="text-slate-700"><strong>Global sourcing consultancies</strong> helping buyers model country and product risk</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl bg-slate-900 text-white p-8 shadow-xl">
+          <h3 class="text-2xl font-bold mb-4">Why This Name Works</h3>
+
+          <div class="space-y-5 text-slate-300 leading-8">
+            <p>
+              <strong class="text-white">Clear topical signal:</strong> the phrase immediately communicates the problem space.
+            </p>
+            <p>
+              <strong class="text-white">Commercially intuitive:</strong> suitable for software, reports, portals, and advisory positioning.
+            </p>
+            <p>
+              <strong class="text-white">Easy to present:</strong> simple wording supports recall in meetings, decks, outreach, and demos.
+            </p>
+            <p>
+              <strong class="text-white">Balanced SEO logic:</strong> the words in a domain can support relevance, but real performance still depends on content quality, technical SEO, and authority building.
+            </p>
+          </div>
+
+          <div class="mt-6 pt-6 border-t border-white/10">
+            <a
+              href="https://developers.google.com/search/docs/appearance/ranking-systems-guide"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm font-semibold text-amber-300 hover:underline block mb-2"
+            >
+              Google: Ranking systems guide
+            </a>
+            <a
+              href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-sm font-semibold text-amber-300 hover:underline"
+            >
+              Google: SEO starter guide
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 md:py-20 bg-slate-100">
+    <div class="max-w-5xl mx-auto px-6 md:px-10">
+      <div class="rounded-3xl bg-white border border-slate-200 shadow-xl p-8 md:p-12 text-center">
+        <div class="inline-flex items-center gap-2 rounded-full bg-amber-50 text-amber-700 border border-amber-200 px-4 py-1.5 text-sm font-semibold mb-5">
+          Serious acquisition inquiries only
+        </div>
+
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+          Request Pricing or a Buyer Brief
+        </h2>
+
+        <p class="text-slate-600 text-lg leading-8 max-w-3xl mx-auto mb-8">
+          For serious interest, contact Snap the Name to discuss pricing, buyer fit, and how TariffRisk.com can support a trade, customs, or supply-chain focused product.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4">
+          <a
+            href="mailto:hussein.lashin@snapthename.com?subject=TariffRisk.com%20Buyer%20Inquiry"
+            class="inline-flex items-center gap-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-white px-6 py-3 font-semibold transition"
+          >
+            <i class="fas fa-envelope"></i>
+            Email
+          </a>
+
+          <a
+            href="https://wa.me/201000001802"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 rounded-lg bg-green-500 hover:bg-green-600 text-white px-6 py-3 font-semibold transition"
+          >
+            <i class="fab fa-whatsapp"></i>
+            WhatsApp
+          </a>
+
+          <a
+            href="tel:+201000001802"
+            class="inline-flex items-center gap-2 rounded-lg border border-slate-300 hover:border-slate-500 text-slate-900 px-6 py-3 font-semibold transition"
+          >
+            <i class="fas fa-phone-alt"></i>
+            Call
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sources -->
+  <section class="py-12 bg-white border-t border-slate-200">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 lg:px-16">
+      <h3 class="text-xl font-bold text-slate-900 mb-5">Selected Sources</h3>
+      <div class="grid md:grid-cols-2 gap-4 text-sm">
+        <a href="https://budgetlab.yale.edu/research/tracking-economic-effects-tariffs" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:underline">
+          The Budget Lab at Yale — Tracking the Economic Effects of Tariffs
+        </a>
+        <a href="https://www.thomsonreuters.com/en-us/posts/corporates/2026-global-trade-report/" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:underline">
+          Thomson Reuters — 2026 Global Trade Report
+        </a>
+        <a href="https://www.dhl.com/global-en/microsites/express/mygts.html" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:underline">
+          DHL MyGTS — Import/Export & Landed Cost Workflow Example
+        </a>
+        <a href="https://zonos.com/landed-cost" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:underline">
+          Zonos — Landed Cost Example
+        </a>
+        <a href="https://developers.google.com/search/docs/appearance/ranking-systems-guide" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:underline">
+          Google — Ranking Systems Guide
+        </a>
+        <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:underline">
+          Google — SEO Starter Guide
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-950 text-slate-400 py-8">
+    <div class="max-w-7xl mx-auto px-6 md:px-10 flex flex-col md:flex-row justify-between items-center gap-3">
+      <p class="text-sm">&copy; 2026 Snap the Name. All rights reserved.</p>
+      <div class="flex flex-wrap items-center gap-4 text-sm">
+        <a href="mailto:hussein.lashin@snapthename.com" class="hover:text-white transition">hussein.lashin@snapthename.com</a>
+        <span class="hidden md:inline text-slate-600">|</span>
+        <a href="tel:+201000001802" class="hover:text-white transition">+20 100 000 1802</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
